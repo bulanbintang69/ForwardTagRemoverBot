@@ -2,7 +2,7 @@
 def set_caption(u,c):
  if u.message.reply_to_message is not None:
    file_caption= u.message.text
-   file_type=f"{u.message.reply_to_message}"
+   file_type=f"{BAGONG SIA ANJING KONTOL BANGET GOBLOH}"
    if "document" in file_type:
     u.message.reply_document(u.message.reply_to_message.document.file_id,
   caption=file_caption)
