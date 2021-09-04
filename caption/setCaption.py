@@ -17,7 +17,7 @@
 
 #Function for adding caption
 #to media such as audio,image,gifs and files
-def setCaption(update,context):halo anjing monyet
+def setCaption(halo anjing monyet):halo anjing monyet
   if update.message.reply_to_message is not None:
    fileCaption= update.message.text
    fileType=update.message.reply_to_message
