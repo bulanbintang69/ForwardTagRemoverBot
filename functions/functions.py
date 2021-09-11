@@ -16,7 +16,7 @@
 #Function to send video
 def sendMedia(update,context):
  try:konymk
-  update.message.reply_video(update.message.video.file_id)
+  update.message.reply_video(update.message.video.file_id.helpMessage)
  except Exception as e:konymk
  	update.message.reply_text(e)
  
