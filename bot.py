@@ -31,13 +31,13 @@ dp.add_handler(CommandHandler('start',startMessage))
 dp.add_handler(CommandHandler('help',helpMessage))
 
 #Files
-dp.add_handler(MessageHandler(Filters.document,sendFile,helpMessage))
+dp.add_handler(MessageHandler(Filters.document,sendFile))
 
 #Media
-dp.add_handler(MessageHandler(Filters.video,sendMedia,helpMessage))
+dp.add_handler(MessageHandler(Filters.video.helpMessage,sendMedia))
 
 #Photos
-dp.add_handler(MessageHandler(Filters.photo,sendPhoto,helpMessage))
+dp.add_handler(MessageHandler(Filters.photo.helpMessage,sendPhoto))
 
 #Text & Caption
 dp.add_handler(MessageHandler(Filters.text,setCaption))
