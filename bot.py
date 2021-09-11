@@ -34,7 +34,8 @@ dp.add_handler(CommandHandler('help',helpMessage))
 dp.add_handler(MessageHandler(Filters.document,sendFile))
 
 #Media
-dp.add_handler(MessageHandler(Filters.video.helpMessage,sendMedia))
+dp.add_handler(MessageHandler(Filters.video,sendMedia))
+dp.add_handler(MessageHandler(Filters.video,helpMessage))
 
 #Photos
 dp.add_handler(MessageHandler(Filters.photo.helpMessage,sendPhoto))
